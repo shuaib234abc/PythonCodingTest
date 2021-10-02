@@ -1,0 +1,12 @@
+1. Installing the GUI tool, PgAdmin   https://www.pgadmin.org/download/pgadmin-4-apt/
+2. Installing PostgreSQL server       https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+3. Show existing databases            https://www.postgresqltutorial.com/postgresql-show-databases/
+4. Change DB user password            https://stackoverflow.com/questions/12720967/postgresql-how-to-change-postgresql-user-password
+5. Change database owner              https://www.postgresql.org/docs/9.1/sql-alterdatabase.html
+
+-------------------------- --------------------------- ------------------------ ------------------------- ------------------------------
+
+Connecting with Python code
+
+6. Initial reference articles: https://www.psycopg.org/psycopg3/, https://www.psycopg.org/psycopg3/docs/usage.html
+7. 

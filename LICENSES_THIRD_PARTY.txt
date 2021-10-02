@@ -1,0 +1,15 @@
+This application is primarily developed in Python 3.9.1 (https://www.python.org/), using the Python Web Framework "Flask".
+You can learn more about Flask at : https://flask.palletsprojects.com/en/1.1.x/
+Flask is licensed under BSD license (https://flask.palletsprojects.com/en/1.1.x/license/#source-license).
+
+The application also uses some other 3rd party libraries, as listed below:
+We have been inspired to tablulate third party softwares in this way from Dolibarr (https://github.com/Dolibarr/dolibarr)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+SL  Library                     Library Link                        Version   License           License Link
+----------------------------------------------------------------------------------------------------------------------------------------
+1   CoreUI                      https://coreui.io                   3.4.0     MIT               https://coreui.io/license
+2   Ionicons                    https://ionicons.com                5.0.0     MIT               https://github.com/ionic-team/ionicons/blob/master/LICENSE
+3   psycopg2                    https://www.psycopg.org/                      LGPL 3.0          https://www.psycopg.org/docs/license.html
+4   jQuery                      https://jquery.com/                 3.6.0     MIT               https://github.com/jquery/jquery/blob/main/LICENSE.txt

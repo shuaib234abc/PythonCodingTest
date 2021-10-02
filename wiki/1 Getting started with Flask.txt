@@ -1,0 +1,47 @@
+# Getting started with Flask Framework
+
+1. To get an idea about the coding conventions in Flask, I looked over the following link. This also contains information on
+running a Flask-based application :
+https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application
+
+2. Running the application:
+In Ubuntu 20.04, run the command : python3 -m flask run
+Note: after you run this command, python looks for a file named app.py. So I renamed the main python script containing the route declarations to app.py
+In my PC, the Flask application started running on port 5000.
+
+3. The above link in (1) contains code to display some text on the web page. However, in a real application, the UI is more complex.
+We need to know how to display some HTML content. For this, I looked over the following tutorial:
+https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates
+
+4. In templates/base.html I put the contents of UI template taken from CoreUI.
+The HTML source code of this UI template references some CSS files and JS files. Even if I keep the CSS / JS assets in same
+folder as base.html, they are not loaded.
+
+5. To know about loading CSS / JS assets correctly, I went throught the following link:
+https://flask.palletsprojects.com/en/1.1.x/tutorial/static/
+
+6. As per the suggestion in the above tutorial, I kept my CSS and JS files in static folder. The user avatar picture and the logo
+picture were also kept there.
+
+
+===================================== =========================== ======================= ========================
+===================================== =========================== ======================= ========================
+===================================== =========================== ======================= ========================
+
+7. All of the web pages in this application (except the login page) will follow a common layout. They will all share the same left
+hand side menu, and share the same header and footer. But we don't want to duplicate the HTML code of the common parts in every
+web page file.
+Using suggestions in the link: https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/, I converted templates/base.html
+into a base template which will contain only the common elements.
+Afterwards, I created templates/index.html, which contains the dashboard specific code only.
+
+===================================== =========================== ======================= ========================
+===================================== =========================== ======================= ========================
+===================================== =========================== ======================= ========================
+
+8. At this point, if you run the application using the command mentioned in (2), and navigate to http://localhost:5000 from the browser, then you
+should be able to see the basic html layout with header and left side menu.
+However, if we visit http://localhost:5000 without having logged in before, we should get redirected to the login screen.
+So at this point, we have to research session management in Flask.
+For this, I went over the contents of https://flask.palletsprojects.com/en/1.1.x/quickstart/#sessions
+

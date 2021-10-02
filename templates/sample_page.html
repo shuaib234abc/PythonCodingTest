@@ -1,0 +1,40 @@
+<!-- ref: https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/ -->
+{% extends 'base.html' %}
+
+<!-- ref: https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/ -->
+{% block page_specific_css %}
+
+{% endblock %}
+
+
+
+{% block page_title %}
+    Sample page title
+{% endblock %}
+
+
+{% block page_subtitle %}
+  Sample page subtitle
+{% endblock %}
+
+
+{% block page_content %}
+    <div class="row justify-content-center">    
+
+    </div>
+{% endblock %}
+
+
+{% block page_specific_js %}
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+  console.log("jQuery is working");
+  
+});
+
+</script>
+
+{% endblock %}
